@@ -1,33 +1,27 @@
-import { StyleSheet } from "react-native";
+import { View } from "react-native";
 
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import Rive, { Alignment, Fit } from "rive-react-native";
 
 export default function HomeScreen() {
   return (
-    <ThemedView style={styles.titleContainer}>
-      <ThemedText type="title">Welcome!</ThemedText>
-    </ThemedView>
+    <View style={{ flex: 1 }}>
+      <View
+        style={{
+          width: "100%",
+          aspectRatio: 1,
+          alignItems: "center",
+          marginTop: 98,
+        }}
+      >
+        <Rive
+          autoplay
+          resourceName="intro_chainless_sm"
+          stateMachineName="intro_chainless_sm"
+          style={{ width: "100%", aspectRatio: 1 }}
+          fit={Fit.FitWidth}
+          alignment={Alignment.Center}
+        />
+      </View>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flex: 1,
-    justifyContent: "center",
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: "absolute",
-  },
-});

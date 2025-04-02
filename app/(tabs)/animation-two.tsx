@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import Rive, { Alignment, Fit } from "rive-react-native";
 
-export default function AnimationOne() {
+export default function AnimationTwo() {
   return (
     <View style={{ flex: 1 }}>
       <View
@@ -14,8 +14,8 @@ export default function AnimationOne() {
       >
         <Rive
           autoplay
-          resourceName="unique_signature_remake"
-          animationName="unique_signature_rmk_os"
+          resourceName="social_login"
+          stateMachineName="social_login_sm"
           style={{ width: "100%", aspectRatio: 1 }}
           fit={Fit.FitWidth}
           alignment={Alignment.Center}

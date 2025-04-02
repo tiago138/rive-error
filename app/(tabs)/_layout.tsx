@@ -37,18 +37,18 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="animation-one"
+        name="animation-two"
         options={{
-          title: "Animation 1",
+          title: "Animation 2",
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="house.fill" color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="animation-two"
+        name="animation-three"
         options={{
-          title: "Animation 2",
+          title: "Animation 3",
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="house.fill" color={color} />
           ),

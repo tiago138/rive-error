@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.tgnvsctn.riveerror"
+      "package": "com.tgnvsctn.riveerror",
+      "versionCode": 2
     },
     "web": {
       "bundler": "metro",
@@ -45,6 +46,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "349617f9-9180-4b45-9e38-3b97d2f7a7cb"
+      }
     }
   }
 }
